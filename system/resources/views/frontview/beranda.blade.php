@@ -53,8 +53,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h4>Tentang Kami?</h4>
-                <span>Pada tanggal 11 Februari 2021, Bupati Ketapang Martin Rantan SH, M.Sos melantik Direksi dan Dewan Pengawas Perusahaan Umum Daerah Ketapang Pangan Mandiri. Pelantikan ini menandai dimulainya operasional Perumda Ketapang Pangan Mandiri, sebuah BUMD yang dibentuk melalu Peraturan Daerah Kabupaten Ketapang Nomor 1 Tahun 2019.
+                <h4>Kenapa Harus Konveksi Pontianak?</h4>
+                <span style="text-align: justify;">
+                    <h6><i class="fa fa-certificate"></i> Legalitas</h6>
+                    <h6><i class="fa fa-certificate"></i> Harga Terjangkau</h6>
+                    <h6><i class="fa fa-certificate"></i> Tim Profesional</h6>
+                    <h6><i class="fa fa-certificate"></i> Quality Control</h6>
+                    <h6><i class="fa fa-certificate"></i> Cepat Dan Ontime</h6>
+                    <h6><i class="fa fa-certificate"></i> Pelayanan Ramah</h6>
                 </span>
             </div>
             <div class="col-md-4">
@@ -120,7 +126,7 @@
 
                 <br>
             </div>
-            
+
         </div>
     </div>
 </div>
