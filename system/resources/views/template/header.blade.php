@@ -47,14 +47,14 @@ if(Route::current()->uri == $route) return 'active';
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{checkRouteActive('xxx')}}" href="contact.html">Blog</a>
+            <a class="nav-link {{checkRouteActive('blog')}} {{checkRouteActive('blog')}}" href="{{url ('blog') }}">Blog</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="dropdown-toggle nav-link  " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+            <a class="dropdown-toggle nav-link {{checkRouteActive('visimisi')}} {{checkRouteActive('team')}} " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
 
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{url ('struktur') }}">Visi Misi</a>
-              <a class="dropdown-item" href="about.html">Team</a>
+              <a class="dropdown-item" href="{{url ('visimisi') }}">Visi Misi</a>
+              <a class="dropdown-item" href="{{url ('team') }}">Team</a>
               <!-- <a class="dropdown-item" href="about.html">Cara Order</a>
               <a class="dropdown-item" href="blog.html">Hasil Produksi</a> -->
               <!-- <a class="dropdown-item" href="testimonials.html">Testimonials</a>
