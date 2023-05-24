@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-12">
         <h1>VISI MISI</h1>
-        <span>Perumda Ketapang Pangan Mandiri</span>
+        <span>KONVEKSI PONTIANAK</span>
       </div>
     </div>
   </div>

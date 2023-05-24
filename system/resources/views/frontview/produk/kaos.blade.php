@@ -1,13 +1,13 @@
 @extends('template.base')
-@section('title', 'Kemeja')
+@section('title', 'Kaos')
 @section('content')
 <!-- Page Content -->
 <div class="page-heading header-text">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>BISNIS KAMI</h1>
-                <span>PERUMDA KETAPANG PANGAN MANDIRI</span>
+                <h1>KAOS</h1>
+                <span>KONVEKSI PONTIANAK</span>
             </div>
         </div>
     </div>
@@ -22,16 +22,22 @@
                     <div class="row">
                         <div class="col-md-6 align-self-center">
                             <div class="right-content">
-                                <span>Lorem ipsum dolor sit amet</span>
-                                <h2><em>Kemeja Safety</em></h2>
-                                <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem.
-                                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.
-                                </p>
+                                <span>Konveksi Pontianak</span>
+                                <h2><em>Kaos Sablon</em></h2>
+                                <span>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6><br>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6> <br> <br>
+                                    <a href="blog-details.html" class="filled-button">Order Sekarang</a>
+                                </span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="left-image">
-                                <img src="{{url ('public/template')}}/assets/images/about-1-570x350.jpg" alt="">
+                                <img src="{{url ('public/template')}}/assets/images/produk/kaos.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -49,16 +55,22 @@
                     <div class="row">
                         <div class="col-md-6 align-self-center">
                             <div class="right-content">
-                                <span>Lorem ipsum dolor sit amet</span>
-                                <h2><em>Kemeja Wearpack</em></h2>
-                                <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem.
-                                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.
-                                </p>
+                                <span>KONVEKSI PONTIANAK</span>
+                                <h2><em>Kaos Polo</em></h2>
+                                <span>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6><br>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6>
+                                    <h6><i class="fa fa-angle-double-right"></i> Cotton 30S :<em> 120.000,00 - 150.000,00 </em></h6> <br> <br>
+                                    <a href="blog-details.html" class="filled-button">Order Sekarang</a>
+                                </span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="left-image">
-                                <img src="{{url ('public/template')}}/assets/images/about-1-570x350.jpg" alt="">
+                                <img src="{{url ('public/template')}}/assets/images/produk/kaospolo.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -68,9 +80,7 @@
     </div>
 </div>
 
-<br>
-<br>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="more-info-content">
@@ -80,7 +90,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="fun-facts">
     <div class="container">

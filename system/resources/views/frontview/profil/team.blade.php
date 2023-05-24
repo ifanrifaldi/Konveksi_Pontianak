@@ -5,8 +5,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>ANGGOTA</h1>
-        <span>PERUMDA KETAPANG PANGAN MANDIRI</span>
+        <h1>TEAM</h1>
+        <span>KONVEKSI PONTIANAK</span>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
       <div class="col-md-12">
         <div class="section-heading">
           <h2>STRUKTUR<em> PERUSAHAAN</em></h2>
-          <span>Perumda Ketapang Pangan Mandiri</span>
+          <span>KONVEKSI PONTIANAK</span>
         </div>
       </div>
       <div class="col-md-4">

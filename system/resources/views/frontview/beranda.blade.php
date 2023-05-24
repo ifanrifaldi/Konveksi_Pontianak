@@ -71,20 +71,20 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h2>Our <em>Offers</em></h2>
-                    <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+                    <h2>Hasil<em> Produksi</em></h2>
+                    <span>Konveksi Pontianak</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/offer-1-720x480.jpg" alt="">
+                    <img src="{{url ('public/template') }}/assets/images/produk/jaket.jpeg" alt="">
                     <div class="down-content">
-                        <h4>Lorem ipsum dolor sit amet</h4>
-                        <div style="margin-bottom:10px;">
+                        <h4>Jaket Bomber</h4>
+                        <!-- <div style="margin-bottom:10px;">
                             <span>from <sup>$</sup>120 per weekend</span>
                         </div>
-                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                        <a href="offers.html" class="filled-button">Book Now</a>
+                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
+                        <a href="offers.html" class="filled-button">Galery</a>
                     </div>
                 </div>
 
@@ -92,14 +92,14 @@
             </div>
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/offer-2-720x480.jpg" alt="">
+                    <img src="{{url ('public/template') }}/assets/images/produk/kaospolo.jpeg" alt="">
                     <div class="down-content">
-                        <h4>Odio libero vel autem atque consequuntur</h4>
-                        <div style="margin-bottom:10px;">
+                        <h4>Kaos Polo</h4>
+                        <!-- <div style="margin-bottom:10px;">
                             <span>from <sup>$</sup>120 per weekend</span>
                         </div>
-                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                        <a href="offers.html" class="filled-button">Book Now</a>
+                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
+                        <a href="offers.html" class="filled-button">Galery</a>
                     </div>
                 </div>
 
@@ -107,19 +107,20 @@
             </div>
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/offer-3-720x480.jpg" alt="">
+                    <img src="{{url ('public/template') }}/assets/images/produk/kemeja2.jpeg" alt="">
                     <div class="down-content">
-                        <h4>Libero eveniet sint nemo beatae</h4>
-                        <div style="margin-bottom:10px;">
+                        <h4>Kemeja PDL</h4>
+                        <!-- <div style="margin-bottom:10px;">
                             <span>from <sup>$</sup>120 per weekend</span>
                         </div>
-                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                        <a href="offers.html" class="filled-button">Book Now</a>
+                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
+                        <a href="offers.html" class="filled-button">Galery</a>
                     </div>
                 </div>
 
                 <br>
             </div>
+            
         </div>
     </div>
 </div>
@@ -135,17 +136,17 @@
                 </div>
                 <div class="col-md-6 align-self-center">
                     <div class="right-content">
-                        <span>Who we are</span>
+                        <span>blog Artikel</span>
                         <h2>Get to know about <em>our company</em></h2>
                         <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus</p>
-                        <a href="about.html" class="filled-button">Read More</a>
+                        <a href="about.html" class="filled-button">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<!-- 
 <div class="more-info">
     <div class="container">
         <div class="section-heading">
@@ -194,7 +195,7 @@
 
 
     </div>
-</div>
+</div> -->
 
 <div class="testimonials">
     <div class="container">
