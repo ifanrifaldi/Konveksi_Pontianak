@@ -392,15 +392,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(../images/ketapang.jpg);
+	background-image: url(../images/banner1.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(../images/ktp.jpg);
+	background-image: url(../images/banner2.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/ktg.jpg);
+	background-image: url(../images/header.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -1093,7 +1093,7 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/bg.png);
+	background-image: url(../images/header.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

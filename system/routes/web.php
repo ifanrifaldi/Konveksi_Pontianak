@@ -29,7 +29,9 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('blog', 'blog');
     Route::get('blogdetail', 'blogdetail');
     // Produk
-    
-
+    Route::get('kemeja', 'kemeja');
+    Route::get('kaos', 'kaos');
+    Route::get('jaket', 'jaket');
+    Route::get('caraorder', 'caraorder');
     // Route::get('bisnis', 'bisnis');
 });

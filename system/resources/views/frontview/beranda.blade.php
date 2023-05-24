@@ -8,12 +8,11 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>PERUMDA KETAPANG<br>PANGAN MANDIRI (KPM)</h4>
+                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
                     <p>
-                        Kantor : Jl.Letkol M.Thohir No.68 Lantai I Gedung BUMD Kelurahan Kantor,Delta Pawan Ketapang
-                        PERUMDA KPM
+                        Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Baca Selengkapnya</a>
+                    <a href="contact.html" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>
@@ -23,12 +22,11 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>KONVEKASI<br>PONTIANAK</h4>
+                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
                     <p>
-                        Kantor : Jl.Letkol M.Thohir No.68 Lantai I Gedung BUMD Kelurahan Kantor,Delta Pawan Ketapang
-                        PERUMDA KPM
+                        Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Baca Selengkapnya</a>
+                    <a href="contact.html" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>
@@ -38,12 +36,11 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>PERUMDA KETAPANG<br>PANGAN MANDIRI (KPM)</h4>
+                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
                     <p>
-                        Kantor : Jl.Letkol M.Thohir No.68 Lantai I Gedung BUMD Kelurahan Kantor,Delta Pawan Ketapang
-                        PERUMDA KPM
+                        Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Baca Selengkapnya</a>
+                    <a href="contact.html" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>

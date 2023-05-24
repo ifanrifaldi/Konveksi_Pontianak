@@ -1,5 +1,5 @@
 @extends('template.base')
-@section('title', 'Struktur')
+@section('title', 'Team')
 @section('content')
 <div class="page-heading header-text">
   <div class="container">

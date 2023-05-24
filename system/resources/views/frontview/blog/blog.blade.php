@@ -5,8 +5,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Read our Blog</h1>
-                <span>Lorem ipsum dolor sit amet consectetur</span>
+                <h1>Blog Artikel</h1>
+                <span>Konveksi Pontianak</span>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
                         <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet.</p>
                         <br>
                         <div>
-                            <a href="blog-details.html" class="filled-button">Continue Reading</a>
+                            <a href="{{ url ('blogdetail')}}" class="filled-button">Baca Selengkapnya</a>
                         </div>
                     </article>
 
@@ -43,7 +43,7 @@
                         <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet</p>
                         <br>
                         <div>
-                            <a href="blog-details.html" class="filled-button">Continue Reading</a>
+                            <a href="{{ url ('blogdetail')}}" class="filled-button">Baca Selengkapnya</a>
                         </div>
                     </article>
                 </section>
