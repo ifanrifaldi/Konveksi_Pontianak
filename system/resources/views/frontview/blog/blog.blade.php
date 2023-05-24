@@ -1,5 +1,5 @@
 @extends('template.base')
-@section('title', 'Beranda')
+@section('title', 'Blog')
 @section('content')
 <div class="main-banner header-text" id="top">
     <div class="Modern-Slider">

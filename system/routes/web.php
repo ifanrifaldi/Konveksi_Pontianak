@@ -19,8 +19,17 @@ Route::get('/', function () {
 });
 
 Route::controller(HomeController::class)->group(function () {
+
     Route::get('beranda', 'beranda');
+
+    // Profil
     Route::get('visimisi', 'visimisi');
-    Route::get('struktur', 'struktur');
-    Route::get('bisnis', 'bisnis');
+    Route::get('team', 'struktur');
+    // blog
+    Route::get('blog', 'blog');
+    Route::get('blogdetail', 'blogdetail');
+    // Produk
+    
+
+    // Route::get('bisnis', 'bisnis');
 });

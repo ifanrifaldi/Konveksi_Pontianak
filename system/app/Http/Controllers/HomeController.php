@@ -10,13 +10,20 @@ class HomeController extends Controller
     }
 
     function visimisi(){
-        return view('frontview.visimisi');
+        return view('frontview.profil.visimisi');
     }
     function struktur(){
-        return view('frontview.struktur');
+        return view('frontview.profil.team');
     }
-    function bisnis(){
-        return view('frontview.bisnis');
+
+    function blog(){
+        return view('frontview.blog.blog');
     }
+    function blogdetail(){
+        return view('frontview.blog.blogdetail');
+    }
+    // function bisnis(){
+    //     return view('frontview.bisnis');
+    // }
 
 }
