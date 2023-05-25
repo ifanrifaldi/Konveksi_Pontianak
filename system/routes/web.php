@@ -18,7 +18,7 @@ Route::prefix('admin')->group(function(){
     include "_/admin.php";
 });
 Route::prefix('/')->group(function(){
-    include "_/frontview.php";
+    include "_/frontend.php";
 });
 
 
