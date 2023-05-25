@@ -35,6 +35,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('kaos', 'kaos');
     Route::get('jaket', 'jaket');
     Route::get('caraorder', 'caraorder');
+
+    Route::get('order', 'order');
     // Route::get('bisnis', 'bisnis');
 });
 
