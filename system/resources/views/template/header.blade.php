@@ -43,7 +43,7 @@ if(Route::current()->uri == $route) return 'active';
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item ">
-            <a class="nav-link {{checkRouteActive('beranda')}}" href="{{url ('beranda') }}">Beranda
+            <a class="nav-link {{checkRouteActive('/')}}" href="{{url ('/') }}">Beranda
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -64,7 +64,6 @@ if(Route::current()->uri == $route) return 'active';
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="dropdown-toggle nav-link {{checkRouteActive('produk/kemeja')}}  {{checkRouteActive('kaos')}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
             <a class="dropdown-toggle nav-link {{checkRouteActive('kemeja')}}  {{checkRouteActive('kaos')}}  {{checkRouteActive('jaket')}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
 
             <div class="dropdown-menu">

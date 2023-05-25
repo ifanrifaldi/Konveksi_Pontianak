@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-
 use App\Http\Controllers\AuthController;
 
 /*
@@ -19,26 +17,10 @@ use App\Http\Controllers\AuthController;
 Route::prefix('admin')->group(function(){
     include "_/admin.php";
 });
-
-Route::controller(HomeController::class)->group(function () {
-
-    Route::get('beranda', 'beranda');
-
-    // Profil
-    Route::get('visimisi', 'visimisi');
-    Route::get('team', 'struktur');
-    // blog
-    Route::get('blog', 'blog');
-    Route::get('blogdetail', 'blogdetail');
-    // Produk
-    Route::get('kemeja', 'kemeja');
-    Route::get('kaos', 'kaos');
-    Route::get('jaket', 'jaket');
-    Route::get('caraorder', 'caraorder');
-
-    Route::get('order', 'order');
-    // Route::get('bisnis', 'bisnis');
+Route::prefix('/')->group(function(){
+    include "_/frontview.php";
 });
+
 
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
