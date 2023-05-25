@@ -21,7 +21,7 @@ Route::prefix('/')->group(function(){
     include "_/frontview.php";
 });
 
-
+ 
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'LoginProses']);
