@@ -5,8 +5,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Blog Artikel</h1>
-                <span>Konveksi Pontianak</span>
+                <h1>BLOG ARTIKEL</h1>
+                <span>KONVEKSI PONTIANAK</span>
             </div>
         </div>
     </div>

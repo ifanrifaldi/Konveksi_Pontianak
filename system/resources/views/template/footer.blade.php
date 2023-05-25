@@ -7,7 +7,8 @@
             <ul class="social-icons">
               <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -68,8 +69,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-                Copyright © 2020 Company Name
-                - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
+            Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif Konveksi Pontianak - Depelopment By <strong><a href ="https://adminlte.io">Ifan Rifaldi </strong></a> & <strong><a href="https://adminlte.io">Junaidi</strong></a>
             </p>
           </div>
         </div>

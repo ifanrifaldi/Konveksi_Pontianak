@@ -18,7 +18,8 @@ if(Route::current()->uri == $route) return 'active';
         <ul class="right-icons">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
         </ul>
       </div>
     </div>
@@ -64,13 +65,14 @@ if(Route::current()->uri == $route) return 'active';
           </li>
           <li class="nav-item dropdown">
             <a class="dropdown-toggle nav-link {{checkRouteActive('produk/kemeja')}}  {{checkRouteActive('kaos')}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
+            <a class="dropdown-toggle nav-link {{checkRouteActive('kemeja')}}  {{checkRouteActive('kaos')}}  {{checkRouteActive('jaket')}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
 
             <div class="dropdown-menu">
               <a class="dropdown-item" href="{{url ('kemeja') }}">Kemeja</a>
               <a class="dropdown-item" href="{{url ('kaos') }}">Kaos</a>
               <a class="dropdown-item" href="{{url ('jaket') }}">Jaket</a>
               <a class="dropdown-item" href="{{url ('caraorder') }}">Cara Order</a>
-              <a class="dropdown-item" href="{{url ('xxxx') }}">Hasil Produksi</a>
+              <a class="dropdown-item" href="{{url ('xxxx') }}">Galery</a>
               <!-- <a class="dropdown-item" href="testimonials.html">Testimonials</a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
               <a class="dropdown-item" href="terms.html">Terms</a> -->
