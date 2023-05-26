@@ -25,7 +25,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/jenis-produk') }}" class="nav-link">
                         <i class="nav-icon fas fa-list"></i>
                         <p>
                             Data Jenis Produk
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/produk') }}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Data Produk
@@ -43,7 +43,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/berita') }}" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
                             Data Berita
@@ -52,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/jenis-produk') }}" class="nav-link">
                         <i class="nav-icon fas fa-list"></i>
                         <p>
                             Data Profil
@@ -61,7 +61,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/prosedur') }}" class="nav-link">
                         <i class="nav-icon fas fa-check"></i>
                         <p>
                             Data Prosedur
@@ -70,7 +70,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/galeri') }}" class="nav-link">
                         <i class="nav-icon fas fa-camera"></i>
                         <p>
                             Data Galeri
@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{ url('admin/fatner') }}" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Data Fatner
@@ -88,7 +88,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin') }}" class="nav-link">
+                    <a href="{{ url('admin/admin') }}" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Data Admin
