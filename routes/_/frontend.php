@@ -12,10 +12,16 @@ Route::controller(HomeController::class)->group(function () {
     // blog
     Route::get('blog', 'blog');
     Route::get('blogdetail', 'blogdetail');
+    // blog
+    Route::get('berita', 'berita');
+    Route::get('beritadetail', 'beritadetail');
     // Produk
     Route::get('kemeja', 'kemeja');
     Route::get('kaos', 'kaos');
     Route::get('jaket', 'jaket');
+    // Cara Order
     Route::get('caraorder', 'caraorder');
+    // Galery
+    Route::get('galery', 'galery');
     // Route::get('bisnis', 'bisnis');
 });

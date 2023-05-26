@@ -48,7 +48,7 @@ if(Route::current()->uri == $route) return 'active';
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{checkRouteActive('blog')}} {{checkRouteActive('blogdetail')}}" href="{{url ('blog') }}">Blog</a>
+            <a class="nav-link {{checkRouteActive('berita')}} {{checkRouteActive('beritadetail')}}" href="{{url ('berita') }}">Berita</a>
           </li>
           <li class="nav-item dropdown">
             <a class="dropdown-toggle nav-link {{checkRouteActive('visimisi')}} {{checkRouteActive('team')}} " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
@@ -63,6 +63,9 @@ if(Route::current()->uri == $route) return 'active';
               <a class="dropdown-item" href="terms.html">Terms</a> -->
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link {{checkRouteActive('blog')}} {{checkRouteActive('blogdetail')}}" href="{{url ('blog') }}">Blog</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="dropdown-toggle nav-link {{checkRouteActive('kemeja')}}  {{checkRouteActive('kaos')}}  {{checkRouteActive('jaket')}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
 
@@ -70,12 +73,18 @@ if(Route::current()->uri == $route) return 'active';
               <a class="dropdown-item" href="{{url ('kemeja') }}">Kemeja</a>
               <a class="dropdown-item" href="{{url ('kaos') }}">Kaos</a>
               <a class="dropdown-item" href="{{url ('jaket') }}">Jaket</a>
-              <a class="dropdown-item" href="{{url ('caraorder') }}">Cara Order</a>
-              <a class="dropdown-item" href="{{url ('xxxx') }}">Galery</a>
+              <!-- <a class="dropdown-item" href="{{url ('caraorder') }}">Cara Order</a>
+              <a class="dropdown-item" href="{{url ('xxxx') }}">Galery</a> -->
               <!-- <a class="dropdown-item" href="testimonials.html">Testimonials</a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
               <a class="dropdown-item" href="terms.html">Terms</a> -->
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{checkRouteActive('galery')}}" href="{{url ('galery') }}">Galery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{checkRouteActive('caraorder')}} " href="{{url ('caraorder') }}">Cara Order</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>

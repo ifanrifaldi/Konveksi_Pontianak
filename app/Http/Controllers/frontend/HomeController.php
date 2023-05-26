@@ -23,6 +23,13 @@ class HomeController extends Controller
     function blogdetail(){
         return view('frontend.blog.blogdetail');
     }
+// Berita
+    function berita(){
+        return view('frontend.berita.berita');
+    }
+    function beritadetail(){
+        return view('frontend.berita.beritadetail');
+    }
 // Produk
     // Kemeja
     function kemeja(){
@@ -36,9 +43,14 @@ class HomeController extends Controller
     function jaket(){
         return view('frontend.produk.jaket');
     }
-    // Cara Order
+
+// Cara Order
     function caraorder(){
-        return view('frontend.produk.caraorder');
+        return view('frontend.caraorder');
+    }
+// Cara Order
+    function galery(){
+        return view('frontend.galery');
     }
 
     // function bisnis(){
