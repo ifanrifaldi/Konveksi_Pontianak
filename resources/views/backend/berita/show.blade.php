@@ -26,7 +26,7 @@
                         <hr>
                         <h4>Deskripsi</h4>
                         <div>
-                            <p>
+                            <p >
                                 {!! nl2br($berita->isi) !!}
                             </p>
                         </div>

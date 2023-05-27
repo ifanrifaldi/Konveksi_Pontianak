@@ -17,35 +17,24 @@
         <div class="row">
             <div class="col-md-8">
                 <section class='tabs-content'>
-                    <article id='tabs-1'>
-                        <img src="{{url ('public/template') }}/assets/images/blog-image-1-940x460.jpg" alt="">
-                        <h4><a href="blog-details.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                @foreach($list_berita as $berita)
+                <article id='tabs-2'>
+                        <img src="{{ url("public/$berita->gambar") }}" alt="{{$berita->gambar}}" class="img-fluid">
+                        <h4><a href="blog-details.html">{{$berita->judul}}</a></h4>
                         <div style="margin-bottom:10px;">
-                            <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
+                            <span>{{$berita->nama_penulis}} &nbsp;|&nbsp; {{ $berita->created_at->diffForHumans()  }} &nbsp;|&nbsp; 15 comments</span>
                         </div>
-                        <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet.</p>
-                        <br>
+                        <!-- <p> {!! nl2br($berita->isi) !!}</p>
+                        <br> -->
                         <div>
-                            <a href="{{ url ('beritadetail')}}" class="filled-button">Baca Selengkapnya</a>
+                            <a href="{{ url ("beritadetail/$berita->id")}}" class="filled-button">Baca Selengkapnya</a>
                         </div>
                     </article>
 
                     <br>
                     <br>
                     <br>
-
-                    <article id='tabs-2'>
-                        <img src="{{url ('public/template') }}/assets/images/blog-image-2-940x460.jpg" alt="">
-                        <h4><a href="blog-details.html">Mauris lobortis quam id dictum dignissim</a></h4>
-                        <div style="margin-bottom:10px;">
-                            <span>John Doe &nbsp;|&nbsp; 27.07.2020 10:10 &nbsp;|&nbsp; 15 comments</span>
-                        </div>
-                        <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet</p>
-                        <br>
-                        <div>
-                            <a href="{{ url ('beritadetail')}}" class="filled-button">Baca Selengkapnya</a>
-                        </div>
-                    </article>
+                @endforeach
                 </section>
             </div>
 

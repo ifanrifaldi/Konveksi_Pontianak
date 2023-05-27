@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4">git 
         <div class="team-item">
           <img src="{{ url ('public/template')}}/assets/images/team-image-1-646x680.jpg" alt="">
           <div class="down-content">

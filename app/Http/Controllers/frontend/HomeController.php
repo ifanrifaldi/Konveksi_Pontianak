@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Berita;
 
 class HomeController extends Controller
-{
+{   
     public function beranda(){
         return view('frontend.beranda');
     }
@@ -25,10 +26,12 @@ class HomeController extends Controller
     }
 // Berita
     function berita(){
-        return view('frontend.berita.berita');
+        $data['list_berita'] = Berita::all();
+        return view('frontend.berita.berita',$data);
     }
-    function beritadetail(){
-        return view('frontend.berita.beritadetail');
+    function beritadetail(Berita $berita){
+        $data['berita'] = $berita;
+        return view('frontend.berita.beritadetail', $data);
     }
 // Produk
     // Kemeja
