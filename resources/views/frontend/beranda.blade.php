@@ -150,6 +150,10 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 </div>
 <!-- 
@@ -203,7 +207,7 @@
     </div>
 </div> -->
 
-<div class="testimonials">
+<!-- <div class="testimonials">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -255,9 +259,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="callback-form">
+<!-- <div class="callback-form">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -306,5 +310,5 @@
         <br>
         <br>
     </div>
-</div>
+</div> -->
 @endsection
