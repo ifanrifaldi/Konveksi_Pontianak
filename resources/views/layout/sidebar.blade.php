@@ -1,3 +1,12 @@
+@php
+    function checkRouteActive($route)
+    {
+        if (Route::current()->uri == $route) {
+            return 'active';
+        }
+    }
+@endphp
+
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
     <div class="sidebar">
@@ -6,7 +15,7 @@
             <div class="image">
                 <img src="{{ url('public/admin') }}/kpk.png" class="img" style="width: 80%">
             </div>
-           
+
         </div>
 
         <nav class="mt-2">
@@ -14,8 +23,8 @@
                 data-accordion="false">
 
 
-                <li class="nav-item menu-open">
-                    <a href="{{ url('/') }}" class="nav-link">
+                <li class="nav-item">
+                    <a href="{{ url('admin') }}" class="nav-link {{checkRouteActive('admin')}}">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
                             Dashboard
@@ -25,7 +34,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('admin/jenis-produk') }}" class="nav-link">
+                    <a href="{{ url('admin/jenis-produk') }}" class="nav-link {{checkRouteActive('admin/jenis-produk')}}">
                         <i class="nav-icon fas fa-list"></i>
                         <p>
                             Data Jenis Produk
@@ -34,7 +43,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/produk') }}" class="nav-link">
+                    <a href="{{ url('admin/produk') }}" class="nav-link {{checkRouteActive('admin/produk')}}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Data Produk
@@ -43,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/berita') }}" class="nav-link">
+                    <a href="{{ url('admin/berita') }}" class="nav-link {{checkRouteActive('admin/berita')}}">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
                             Data Berita
@@ -52,25 +61,91 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/jenis-produk') }}" class="nav-link">
+                    <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-list"></i>
                         <p>
-                            Data Profil
+                            Profil
                         </p>
+                        <i class="fas fa-angle-left right"></i>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ url('admin/profil/visi') }}" class="nav-link {{checkRouteActive('admin/profil/visi')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Visi
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('admin/profil/misi') }}" class="nav-link {{checkRouteActive('admin/profil/misi')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Misi
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('admin/profil/tujuan') }}" class="nav-link {{checkRouteActive('admin/profil/tujuan')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Tujuan
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('admin/profil/moto') }}" class="nav-link {{checkRouteActive('admin/profil/moto')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Moto
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/prosedur') }}" class="nav-link">
-                        <i class="nav-icon fas fa-check"></i>
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-list"></i>
                         <p>
-                            Data Prosedur
+                            Prosedur
                         </p>
+                        <i class="fas fa-angle-left right"></i>
                     </a>
-                </li>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ url('admin/prosedur/order') }}" class="nav-link {{checkRouteActive('admin/prosedur/order')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Prosedur Order
+                                </p>
+                            </a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a href="{{ url('admin/prosedur/desain') }}" class="nav-link {{checkRouteActive('admin/prosedur/desain')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Prosedur Desain
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('admin/prosedur/produksi') }}" class="nav-link {{checkRouteActive('admin/prosedur/produksi')}}">
+                                <i class="fa fa-check nav-icon"></i>
+                                <p>
+                                    Prosedur Produksi
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item">
-                    <a href="{{ url('admin/galeri') }}" class="nav-link">
+                    <a href="{{ url('admin/galeri') }}" class="nav-link {{checkRouteActive('admin/galeri')}}">
                         <i class="nav-icon fas fa-camera"></i>
                         <p>
                             Data Galeri
@@ -79,16 +154,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/fatner') }}" class="nav-link">
+                    <a href="{{ url('admin/mitra') }}" class="nav-link {{checkRouteActive('admin/mitra')}}">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Data Fatner
+                            Data Mitra
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/admin') }}" class="nav-link">
+                    <a href="{{ url('admin/admin') }}" class="nav-link {{checkRouteActive('admin/admin')}}">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Data Admin

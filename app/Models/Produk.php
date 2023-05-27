@@ -4,6 +4,7 @@ namespace App\Models;
 use Illuminate\Support\Str;
 use App\Models\Model;
 use App\Models\JenisProduk;
+use App\Models\GaleriProduk;
 
 class Produk extends Model
 {
@@ -15,11 +16,18 @@ class Produk extends Model
  
     }
 
+    
+    function GaleriProduk()
+    {
+        return $this->belongsTo(GaleriProduk::class, 'id');
+ 
+    }
+
     function handleUploadFoto()
     {
         if (request()->hasFile('foto')) {
             $foto = request()->file('foto');
-            $destination = "galeri";
+            $destination = "produk";
             $randomStr = Str::random(5);
             $filename = time() . "-"  . $randomStr . "."  . $foto->extension();
             $url = $foto->storeAs($destination, $filename);

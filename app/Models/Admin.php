@@ -13,7 +13,7 @@ class Admin extends ModelAuthenticate
     {
         if (request()->hasFile('foto')) {
             $foto = request()->file('foto');
-            $destination = "Data-Admin";
+            $destination = "data-admin";
             $randomStr = Str::random(5);
             $filename = time() . "-"  . $randomStr . "."  . $foto->extension();
             $url = $foto->storeAs($destination, $filename);

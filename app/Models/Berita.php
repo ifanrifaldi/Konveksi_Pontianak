@@ -12,7 +12,7 @@ class Berita extends Model
     {
         if (request()->hasFile('gambar')) {
             $gambar = request()->file('gambar');
-            $destination = "Berita";
+            $destination = "berita";
             $randomStr = Str::random(5);
             $filename = time() . "-"  . $randomStr . "."  . $gambar->extension();
             $url = $gambar->storeAs($destination, $filename);
