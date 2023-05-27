@@ -36,9 +36,9 @@ class BeritaController extends Controller
     }
 
     
-    public function show(Berita $berita)
+    public function show($berita)
     {
-        $data['berita'] = $berita;
+        $data['berita'] = Berita::find($berita);
         return view('backend.berita.show', $data);
     }
 

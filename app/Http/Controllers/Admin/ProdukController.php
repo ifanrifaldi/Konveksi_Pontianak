@@ -3,63 +3,86 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\GaleriProduk;
 use Illuminate\Http\Request;
+use App\Models\Produk;
+use App\Models\JenisProduk;
 
 class ProdukController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $data['list_produk'] = Produk::all();
+        return view('backend.produk.index', $data);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('backend.produk.create', $data);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $produk = New Produk;
+        $produk->id_jenis_produk = request('id_jenis_produk');
+        $produk->nama = request('nama');
+        $produk->harga = request('harga');
+        $produk->bahan_pakaian = request('bahan_pakaian');
+        $produk->ukuran = request('ukuran');
+        $produk->handleUploadFoto();
+        $produk->save();
+
+        return redirect('admin/produk')->with('success', 'Data Berhasil di Simpan');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show($produk)
     {
-        //
+        $data['produk'] = Produk::find($produk);
+        $data['list_galeri_produk'] = GaleriProduk::where('id_produk', $produk)->orderBy('created_at', 'DESC')->get();
+        return view('backend.produk.show', $data);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit($produk)
     {
-        //
+        $data['list_jenis_produk'] = JenisProduk::all();
+        $data['produk'] = Produk::find($produk);
+        return view('backend.produk.edit', $data);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(Produk $produk)
     {
-        //
+        $produk->id_jenis_produk = request('id_jenis_produk');
+        $produk->nama = request('nama');
+        $produk->harga = request('harga');
+        $produk->bahan_pakaian = request('bahan_pakaian');
+        $produk->ukuran = request('ukuran');
+        $produk->handleUploadFoto();
+        $produk->save();
+
+        return redirect('admin/produk')->with('success', 'Data Berhasil di Simpan');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy($produk)
     {
-        //
+        Produk::destroy($produk);
+        return back()->with('danger');
+    }
+
+    public function storeGaleri()
+    {
+        $galeri_produk = New GaleriProduk();
+        $galeri_produk->id_produk = request('id_produk');
+        $galeri_produk->handleUploadFoto();
+        $galeri_produk->save();
+
+        return back()->with('success', 'Data Galeri Produk Berhasil di Tambahkan');
+    }
+
+    public function deleteGaleri($galeri_produk)
+    {
+        GaleriProduk::destroy($galeri_produk);
+
+        return back()->with('danger', 'Data Berhasil di Hapus');
     }
 }

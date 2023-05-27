@@ -33,7 +33,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Isi Berita</label>
                                 <div class="col-sm-10">
-                                    <textarea id="compose-textarea" class="form-control" name="isi" style="height: 100%"></textarea>
+                                    <textarea class="form-control summernote" name="isi" style="height: 100%"></textarea>
                                 </div>
                             </div>
 

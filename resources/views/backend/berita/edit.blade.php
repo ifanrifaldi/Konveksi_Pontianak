@@ -7,9 +7,11 @@
                     <div class="header">
                         <a href="{{ url('admin/berita') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i>
                             Kembali</a>
+                            <br><br>
                     </div>
+                    
                     <div class="card-header">
-                        <h3 class="card-title">Edit Berita</h3>
+                        <h3 class="title text-center">Edit Berita</h3>
                     </div>
                     <form action="{{ url('admin/berita', $berita->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -44,7 +46,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Isi Berita</label>
                                 <div class="col-sm-10">
-                                    <textarea id="compose-textarea" class="form-control" name="isi" style="height: 100%">{{ $berita->isi }}</textarea>
+                                    <textarea class="form-control summernote" name="isi" style="height: 100%">{{ $berita->isi }}</textarea>
                                 </div>
                             </div>
 
