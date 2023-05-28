@@ -1,6 +1,7 @@
 @extends('template.base')
 @section('title', 'Berita')
 @section('content')
+@include('layout.menu.menu')
 <div class="page-heading header-text">
     <div class="container">
         <div class="row">

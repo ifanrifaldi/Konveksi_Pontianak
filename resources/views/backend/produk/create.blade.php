@@ -30,23 +30,9 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Harga</label>
+                                <label class="col-sm-2 col-form-label">Deskripsi Produk</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="harga" placeholder="Harga">
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Bahan Pakaian</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control summernote" name="bahan_pakaian"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Ukuran Pakaian</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control summernote" name="ukuran"></textarea>
+                                    <textarea class="form-control summernote" name="deskripsi_produk"></textarea>
                                 </div>
                             </div>
 

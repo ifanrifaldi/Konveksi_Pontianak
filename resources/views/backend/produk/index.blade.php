@@ -19,8 +19,7 @@
                                 <th class="text-center">Aksi</th>
                                 <th class="text-center">Nama Produk</th>
                                 <th class="text-center">Jenis Produk</th>
-                                <th class="text-center">Bahan Pakaian</th>
-                                <th class="text-center">Ukuran</th>
+                                <th class="text-center">Deskripsi Produk</th>                                
                             </tr>
                         </thead>
                         <tbody>
@@ -42,8 +41,7 @@
                                     </td>
                                     <td class="text-center">{{ $produk->nama }}</td>
                                     <td class="text-center">{{ $produk->jenisproduk->nama }}</td>
-                                    <td class="text">{!! nl2br ($produk->bahan_pakaian) !!}</td>
-                                    <td class="text">{!!( $produk->ukuran) !!}</td>
+                                    <td class="text">{!! nl2br ($produk->deskripsi_produk) !!}</td>
                                 </tr>
                                
                             @endforeach

@@ -1,6 +1,8 @@
 @extends('template.base')
 @section('title', 'Bisnis Kami')
 @section('content')
+
+@include('layout.menu.menu')
 <!-- Page Content -->
 <div class="page-heading header-text">
     <div class="container">

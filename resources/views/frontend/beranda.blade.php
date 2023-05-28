@@ -1,6 +1,8 @@
 @extends('template.base')
 @section('title', 'Beranda')
 @section('content')
+
+@include('layout.menu.menu')
 <div class="main-banner header-text" id="top">
     <div class="Modern-Slider">
         <!-- Item -->

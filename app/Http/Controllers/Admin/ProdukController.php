@@ -27,9 +27,7 @@ class ProdukController extends Controller
         $produk = New Produk;
         $produk->id_jenis_produk = request('id_jenis_produk');
         $produk->nama = request('nama');
-        $produk->harga = request('harga');
-        $produk->bahan_pakaian = request('bahan_pakaian');
-        $produk->ukuran = request('ukuran');
+        $produk->deskripsi_produk = request('deskripsi_produk');
         $produk->handleUploadFoto();
         $produk->save();
 
@@ -54,9 +52,7 @@ class ProdukController extends Controller
     {
         $produk->id_jenis_produk = request('id_jenis_produk');
         $produk->nama = request('nama');
-        $produk->harga = request('harga');
-        $produk->bahan_pakaian = request('bahan_pakaian');
-        $produk->ukuran = request('ukuran');
+        $produk->deskripsi_produk = request('deskripsi_produk');
         $produk->handleUploadFoto();
         $produk->save();
 

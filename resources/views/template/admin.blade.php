@@ -113,7 +113,7 @@
     <script>
         $(function() {
             $('.summernote').summernote({
-                height: 100
+                height: 300
             })
         })
     </script>
