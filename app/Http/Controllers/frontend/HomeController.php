@@ -4,56 +4,66 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Berita;
+use App\Models\JenisProduk;
+use App\Models\Produk;
 
 class HomeController extends Controller
 {   
     public function beranda(){
-        return view('frontend.beranda');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.beranda', $data);
     }
 // Profil
     function visimisi(){
-        return view('frontend.profil.visimisi');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.profil.visimisi', $data);
     }
     function struktur(){
-        return view('frontend.profil.team');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.profil.team', $data);
     }
 // Blog
     function blog(){
-        return view('frontend.blog.blog');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.blog.blog', $data);
     }
     function blogdetail(){
-        return view('frontend.blog.blogdetail');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.blog.blogdetail', $data);
     }
 // Berita
     function berita(){
         $data['list_berita'] = Berita::all();
+        $data['list_jenis_produk'] = JenisProduk::all();
+
         return view('frontend.berita.berita',$data);
     }
     function beritadetail(Berita $berita){
         $data['berita'] = $berita;
+        $data['list_jenis_produk'] = JenisProduk::all();
+
         return view('frontend.berita.beritadetail', $data);
     }
 // Produk
-    // Kemeja
-    function kemeja(){
-        return view('frontend.produk.kemeja');
-    }
-    // Kaos
-    function kaos(){
-        return view('frontend.produk.kaos');
-    }
-    // jaket
-    function jaket(){
-        return view('frontend.produk.jaket');
+
+    public function show($jenis_produk)
+    {
+        $data['jenis_produk'] = JenisProduk::find($jenis_produk);
+        $data['list_produk'] = Produk::where('id_jenis_produk', $jenis_produk)->get();
+        $data['list_jenis_produk'] = JenisProduk::all();
+
+        return view('frontend.produk.show', $data);
     }
 
 // Cara Order
     function caraorder(){
-        return view('frontend.caraorder');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.caraorder', $data);
     }
 // Cara Order
     function galery(){
-        return view('frontend.galery');
+        $data['list_jenis_produk'] = JenisProduk::all();
+        return view('frontend.galery', $data);
     }
 
     // function bisnis(){
