@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Berita;
+use App\Models\Galeri;
 use App\Models\JenisProduk;
 use App\Models\Produk;
 
@@ -62,6 +63,8 @@ class HomeController extends Controller
     }
 // Cara Order
     function galery(){
+        $data['list_produk'] = Produk::all();
+        $data['list_galeri'] = Galeri::all();
         $data['list_jenis_produk'] = JenisProduk::all();
         return view('frontend.galery', $data);
     }

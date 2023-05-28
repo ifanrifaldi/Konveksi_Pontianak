@@ -17,13 +17,14 @@
     <div class="services">
       <div class="container">
         <div class="row">
+        @foreach ($list_galeri as $galeri)
           <div class="col-md-4">
             <div class="service-item">
-              <img src="{{url ('public/template')}}/assets/images/produk/kemeja2.jpeg" alt="">
+              <img src="{{ url("public/$galeri->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
               <div class="down-content">
-                <h4>KEMEJA PDL</h4>
+                <h4>{{ $galeri->label }}</h4>
                 <div style="margin-bottom:10px;">
-                  <span>PT. Bumitama Gunajaya Agro</span>
+                  <span>{{ $galeri->pemesan }}</span>
                 </div>
                 <!-- <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
                 <a href="{{url ('public/template')}}/assets/images/produk/kemeja2.jpeg"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Book Now</a>
@@ -34,7 +35,7 @@
 
             <br>
           </div>
-          
+        @endforeach
         </div>
 
         <br>

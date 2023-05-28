@@ -17,6 +17,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('beritadetail/{berita}', 'beritadetail');
     // Produk
     Route::get('produk/{jenis_produk}', 'show');
+    // Route::get('produk/{jenis_produk}', 'view');
     Route::get('kaos', 'kaos');
     Route::get('jaket', 'jaket');
     // Cara Order
