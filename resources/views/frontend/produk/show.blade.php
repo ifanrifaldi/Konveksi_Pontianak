@@ -23,7 +23,7 @@
                 
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{ url("public/$produk->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 200px;">
+                    <img src="{{ url("public/$produk->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
                     <div class="down-content">
                         <h4 class="text-center">
                             {{ $produk->nama }}
@@ -33,12 +33,12 @@
                                 {!! nl2br($produk->deskripsi_produk) !!}
                             </span>
                         </div>
-                        <p class="text-center">
+                        <!-- <p class="text-center">
                             <i class="fa fa-user" title="passegengers"></i> 5 &nbsp;&nbsp;&nbsp;
                             <i class="fa fa-briefcase" title="luggages"></i> 4 &nbsp;&nbsp;&nbsp;
                             <i class="fa fa-sign-out" title="doors"></i> 4 &nbsp;&nbsp;&nbsp;
                             <i class="fa fa-cog" title="transmission"></i> A
-                        </p>
+                        </p> -->
                         <a href="#" data-toggle="modal" data-target="#exampleModal" class="filled-button">
                             Order Now
                         </a>
@@ -52,7 +52,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 70px;">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 70px;">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -130,5 +130,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 @endsection

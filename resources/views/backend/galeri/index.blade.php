@@ -18,6 +18,7 @@
                                     <th class="text-center">No</th>
                                     <th class="text-center">Aksi</th>
                                     <th class="text-center">Label</th>
+                                    <th class="text-center">Pemesan</th>
                                     <th class="text-center">Foto</th>
                                 </tr>
                             </thead>
@@ -37,6 +38,7 @@
                                             </div>
                                         </td>
                                         <td class="text-center">{{ $galeri->label }}</td>
+                                        <td class="text-center">{{ $galeri->pemesan }}</td>
                                         <td class="text-center">
                                             <img src="{{ url("public/$galeri->foto") }}" class="img-responsive"
                                                 style="width:20%">
@@ -62,6 +64,13 @@
                                                             <div class="col-sm-10">
                                                                 <input type="text" class="form-control" name="label"
                                                                     value="{{ $galeri->label }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-2 col-form-label">Pemesan</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" name="pemesan"
+                                                                    value="{{ $galeri->pemesan }}">
                                                             </div>
                                                         </div>
 
@@ -113,6 +122,12 @@
                             <label class="col-sm-2 col-form-label">Label</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="label" placeholder="Label" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Pemesan</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="pemesan" placeholder="Pemesan" required>
                             </div>
                         </div>
 
