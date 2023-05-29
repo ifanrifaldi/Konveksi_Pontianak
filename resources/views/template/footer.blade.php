@@ -5,11 +5,11 @@
             <h4>Konveksi Pontianak</h4>
             <p>"Be empowered and useful"</p>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="https://www.facebook.com/muhammad.hotip.520" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://youtube.com/@konveksipontianak"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://instagram.com/konveksipontianak_official?igshid=NTc4MTIwNjQ2YQ"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://wa.me/081545010209"><i class="fa fa-whatsapp"></i></a></li>
-              <li><a href="https://www.tiktok.com/@konveksiptk?_t=8caIq1O9hwo&_r=1"><i class="fa fa-tiktok"></i></a></li>
+              <li><a rel="nofollow" href="https://www.facebook.com/muhammad.hotip.520" target="_blank" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://youtube.com/@konveksipontianak" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://instagram.com/konveksipontianak_official?igshid=NTc4MTIwNjQ2YQ" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://wa.me/081545010209" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a href="https://www.tiktok.com/@konveksiptk?_t=8caIq1O9hwo&_r=1" target="_blank"><i class="bi bigit-tiktok"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -22,9 +22,9 @@
               <li><a href="#">Lacinia ac sapien</a></li> -->
             </ul>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a rel="nofollow" href="#" target="_blank" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -49,7 +49,7 @@
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]@[^ @]" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -70,7 +70,7 @@
             <h4 style="text-align: justify;">Alamat</h4>
             <p>Komplek Grand Parma Residence 1, Nomor C5, Kelurahan Parit Mayor, Kecamatan Pontianak Timur, Kota Pontianak, Kalimantan Barat, 78321</p>
             <ul class="social-icons">
-              <li><a href="https://maps.app.goo.gl/DRuhWg4zEnonGER28"><i class="fa fa-map-marker"></i></a></li>
+              <li><a href="https://maps.app.goo.gl/DRuhWg4zEnonGER28" target="_blank"><i class="fa fa-map-marker"></i></a></li>
             </ul>
           </div>
           
@@ -83,7 +83,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-            Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif Konveksi Pontianak - Depelopment By <strong><a href ="https://adminlte.io">Ifan Rifaldi </strong></a> & <strong><a href="https://adminlte.io">Junaidi</strong></a>
+            Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif Konveksi Pontianak - Depelopment By <strong><a href ="https://instagram.com/ifanrifaldi47">Ifan Rifaldi </strong></a> & <strong><a href="#">Junaidi</strong></a>
             </p>
           </div>
         </div>
