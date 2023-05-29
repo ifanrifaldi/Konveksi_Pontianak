@@ -14,7 +14,7 @@
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Order Sekarang</a>
+                    <a href="https://wa.me/081545010209" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Order Sekarang</a>
+                    <a href="https://wa.me/081545010209" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
-                    <a href="contact.html" class="filled-button">Order Sekarang</a>
+                    <a href="https://wa.me/081545010209" class="filled-button">Order Sekarang</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
 <div class="request-form">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <h4>Kenapa Harus Konveksi Pontianak?</h4>
                 <span style="text-align: justify;">
                     <h6><i class="fa fa-certificate"></i> Legalitas</h6>
@@ -65,8 +65,15 @@
                     <h6><i class="fa fa-certificate"></i> Pelayanan Ramah</h6>
                 </span>
             </div>
-            <div class="col-md-4">
-                <a href="contact.html" class="border-button">Visi Misi</a>
+            <div class="col-md-6">
+            <br>
+            <span style="text-align: justify;">
+                    <h6><i class="fa fa-certificate"></i> Bebas Titik Bordir</h6>
+                    <h6><i class="fa fa-certificate"></i> Bebas Model</h6>
+                    <h6><i class="fa fa-certificate"></i> Bebas Ukuran</h6>
+                    <h6><i class="fa fa-certificate"></i> Bahan Grad A</h6>
+                    <h6><i class="fa fa-certificate"></i> Gratis Desain</h6>
+                </span>
             </div>
         </div>
     </div>
@@ -80,7 +87,7 @@
             <div class="col-md-12">
                 <div class="section-heading">
                     <h2>Hasil<em> Produksi</em></h2>
-                    <span>Konveksi Pontianak</span>
+                    <span>KEMEJA SAFETY, KEMEJA WEARPACK, JAKET (BOMBER/PARKA), KAOS (OBLONG / POLO), (PDH / PDL).</span>
                 </div>
             </div>
             <div class="col-md-4">

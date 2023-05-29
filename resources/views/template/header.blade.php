@@ -13,16 +13,16 @@
                 <ul class="left-info">
                     <li><a href="#"><i class="fa fa-envelope"></i>konvekasipontianak@gmail.com
                         </a></li>
-                    <li><a href="#"><i class="fa fa-phone"></i>1222000662218
+                    <li><a href="tel:081545010209"><i class="fa fa-phone"></i>0815-4501-0209 
                         </a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <ul class="right-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/muhammad.hotip.520"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://youtube.com/@konveksipontianak"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://instagram.com/konveksipontianak_official?igshid=NTc4MTIwNjQ2YQ"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/081545010209"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -54,9 +54,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ checkRouteActive('berita') }} {{ checkRouteActive('beritadetail') }}"
-                            href="{{ url('berita') }}">Berita</a>
+                            href="{{ url('berita') }}">Blog</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link {{ checkRouteActive('profil') }} {{ checkRouteActive('beritadetail') }}"
+                            href="{{ url('profil') }}">Profil</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link {{ checkRouteActive('visimisi') }} {{ checkRouteActive('team') }} "
                             data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                             aria-expanded="false">Profil</a>
@@ -66,7 +70,7 @@
                             <a class="dropdown-item" href="{{ url('team') }}">Team</a>
                           
                         </div>
-                    </li>
+                    </li> -->
                     {{-- <li class="nav-item">
                         <a class="nav-link {{ checkRouteActive('blog') }} {{ checkRouteActive('blogdetail') }}"
                             href="{{ url('blog') }}">Blog</a>
