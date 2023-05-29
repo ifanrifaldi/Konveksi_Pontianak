@@ -33,6 +33,17 @@
                     </a>
 
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ url('admin/profil') }}" class="nav-link {{checkRouteActive('admin/profil')}}">
+                        <i class="nav-icon fas fa-university"></i>
+                        <p>
+                            Profil
+                        </p>
+                    </a>
+                    
+                </li>
+                
                 <li class="nav-item">
                     <a href="{{ url('admin/jenis-produk') }}" class="nav-link {{checkRouteActive('admin/jenis-produk')}}">
                         <i class="nav-icon fas fa-list"></i>
@@ -60,52 +71,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-list"></i>
-                        <p>
-                            Profil
-                        </p>
-                        <i class="fas fa-angle-left right"></i>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ url('admin/profil/visi') }}" class="nav-link {{checkRouteActive('admin/profil/visi')}}">
-                                <i class="fa fa-check nav-icon"></i>
-                                <p>
-                                    Visi
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="{{ url('admin/profil/misi') }}" class="nav-link {{checkRouteActive('admin/profil/misi')}}">
-                                <i class="fa fa-check nav-icon"></i>
-                                <p>
-                                    Misi
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="{{ url('admin/profil/tujuan') }}" class="nav-link {{checkRouteActive('admin/profil/tujuan')}}">
-                                <i class="fa fa-check nav-icon"></i>
-                                <p>
-                                    Tujuan
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="{{ url('admin/profil/moto') }}" class="nav-link {{checkRouteActive('admin/profil/moto')}}">
-                                <i class="fa fa-check nav-icon"></i>
-                                <p>
-                                    Moto
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+               
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
