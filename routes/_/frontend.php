@@ -7,8 +7,9 @@ Route::controller(HomeController::class)->group(function () {
 
     Route::get('/', 'beranda');
     // Profil
-    Route::get('visimisi', 'visimisi');
-    Route::get('team', 'struktur');
+    Route::get('profil', 'profil');
+    // Route::get('visimisi', 'visimisi');
+    // Route::get('team', 'struktur');
     // blog
     Route::get('blog', 'blog');
     Route::get('blogdetail', 'blogdetail');

@@ -15,14 +15,18 @@ class HomeController extends Controller
         return view('frontend.beranda', $data);
     }
 // Profil
-    function visimisi(){
+    function profil(){
         $data['list_jenis_produk'] = JenisProduk::all();
-        return view('frontend.profil.visimisi', $data);
+        return view('frontend.profil.profil', $data);
     }
-    function struktur(){
-        $data['list_jenis_produk'] = JenisProduk::all();
-        return view('frontend.profil.team', $data);
-    }
+    // function visimisi(){
+    //     $data['list_jenis_produk'] = JenisProduk::all();
+    //     return view('frontend.profil.visimisi', $data);
+    // }
+    // function struktur(){
+    //     $data['list_jenis_produk'] = JenisProduk::all();
+    //     return view('frontend.profil.team', $data);
+    // }
 // Blog
     function blog(){
         $data['list_jenis_produk'] = JenisProduk::all();

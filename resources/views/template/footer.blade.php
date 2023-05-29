@@ -2,37 +2,43 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>Car Rental Website</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+            <h4>Konveksi Pontianak</h4>
+            <p>"Be empowered and useful"</p>
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="https://www.facebook.com/muhammad.hotip.520" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://youtube.com/@konveksipontianak"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://instagram.com/konveksipontianak_official?igshid=NTc4MTIwNjQ2YQ"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://wa.me/081545010209"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a href="https://www.tiktok.com/@konveksiptk?_t=8caIq1O9hwo&_r=1"><i class="fa fa-tiktok"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Partner</h4>
+            <ul class="menu-list">
+              <li><a href="#">Kreatif Pontianak</a></li>
+              <li><a href="#">Berkah Konveksi</a></li>
+              <li><a href="#">Rumah Konveksi Kalbar </a></li>
+              <!-- <li><a href="#">Cursus augue hasellus</a></li>
+              <li><a href="#">Lacinia ac sapien</a></li> -->
+            </ul>
             <ul class="social-icons">
               <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
+            <h4>Fitur</h4>
             <ul class="menu-list">
-              <li><a href="#">Vivamus ut tellus mi</a></li>
-              <li><a href="#">Nulla nec cursus elit</a></li>
-              <li><a href="#">Vulputate sed nec</a></li>
-              <li><a href="#">Cursus augue hasellus</a></li>
-              <li><a href="#">Lacinia ac sapien</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
-            <ul class="menu-list">
-              <li><a href="#">About Us</a></li>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Profil</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms</a></li>
+              <li><a href="#">Galery</a></li>
+              <li><a href="#">Cara Order</a></li>
             </ul>
           </div>
-          <div class="col-md-3 footer-item last-item">
-            <h4>Contact Us</h4>
+          <!-- <div class="col-md-3 footer-item last-item">
+            <h4>Hubungi Kami</h4>
             <div class="contact-form">
               <form id="contact footer-contact" action="" method="post">
                 <div class="row">
@@ -59,7 +65,15 @@
                 </div>
               </form>
             </div>
+          </div> -->
+          <div class="col-md-3 footer-item last-item">
+            <h4 style="text-align: justify;">Alamat</h4>
+            <p>Komplek Grand Parma Residence 1, Nomor C5, Kelurahan Parit Mayor, Kecamatan Pontianak Timur, Kota Pontianak, Kalimantan Barat, 78321</p>
+            <ul class="social-icons">
+              <li><a href="https://maps.app.goo.gl/DRuhWg4zEnonGER28"><i class="fa fa-map-marker"></i></a></li>
+            </ul>
           </div>
+          
         </div>
       </div>
     </footer>
