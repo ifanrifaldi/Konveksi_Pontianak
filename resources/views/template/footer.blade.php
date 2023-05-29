@@ -9,7 +9,7 @@
               <li><a href="https://youtube.com/@konveksipontianak" target="_blank"><i class="fa fa-youtube"></i></a></li>
               <li><a href="https://instagram.com/konveksipontianak_official?igshid=NTc4MTIwNjQ2YQ" target="_blank"><i class="fa fa-instagram"></i></a></li>
               <li><a href="https://wa.me/081545010209" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-              <li><a href="https://www.tiktok.com/@konveksiptk?_t=8caIq1O9hwo&_r=1" target="_blank"><i class="bi bigit-tiktok"></i></a></li>
+              <li><a href="https://www.tiktok.com/@konveksiptk?_t=8caIq1O9hwo&_r=1" target="_blank"><i class="bi bi-tiktok"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
@@ -83,7 +83,7 @@
         <div class="row">
           <div class="col-md-12">
             <p>
-            Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif Konveksi Pontianak - Depelopment By <strong><a href ="https://instagram.com/ifanrifaldi47">Ifan Rifaldi </strong></a> & <strong><a href="#">Junaidi</strong></a>
+            Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif Konveksi Pontianak - Depelopment By <strong><a href ="https://instagram.com/ifanrifaldi47" target="_blank">Ifan Rifaldi </strong></a> & <strong><a href="#">Junaidi</strong></a>
             </p>
           </div>
         </div>
