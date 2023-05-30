@@ -20,6 +20,8 @@ class GaleriController extends Controller
         $galeri = New Galeri;
         $galeri->label = request('label');
         $galeri->pemesan = request('pemesan');
+        $galeri->bahan = request('bahan');
+        $galeri->jumlah = request('jumlah');
         $galeri->handleUploadFoto();
 
         $galeri->save();
@@ -34,6 +36,8 @@ class GaleriController extends Controller
     {
         $galeri->label = request('label');
         $galeri->pemesan = request('pemesan');
+        $galeri->bahan = request('bahan');
+        $galeri->jumlah = request('jumlah');
         $galeri->handleUploadFoto();
 
         $galeri->save();
