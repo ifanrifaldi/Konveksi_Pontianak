@@ -66,7 +66,7 @@
                     <a href="{{ url('admin/berita') }}" class="nav-link {{checkRouteActive('admin/berita')}}">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
-                            Data Berita
+                            Data Blog
                         </p>
                     </a>
                 </li>
