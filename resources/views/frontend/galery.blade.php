@@ -24,10 +24,12 @@
               <div class="down-content">
                 <h4>{{ $galeri->label }}</h4>
                 <div style="margin-bottom:10px;">
-                  <span>{{ $galeri->pemesan }}</span>
+                  <h6><b>Pemesan :</b> {{ $galeri->pemesan }}</h6>
+                  <h6><b>Bahan :</b> {{ $galeri->bahan }}</h6>
+                  <h6><b>Jumlah :</b> {{ $galeri->jumlah }} Pcs</h6>
                 </div>
                 <!-- <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
-                <a href="{{url ('public/template')}}/assets/images/produk/kemeja2.jpeg"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Book Now</a>
+                <a href="{{url ('public/template')}}/assets/images/produk/kemeja2.jpeg"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Lihat</a>
                 
               </div>
               

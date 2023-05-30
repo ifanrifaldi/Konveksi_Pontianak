@@ -19,6 +19,8 @@
                                     <th class="text-center">Aksi</th>
                                     <th class="text-center">Label</th>
                                     <th class="text-center">Pemesan</th>
+                                    <th class="text-center">Bahan</th>
+                                    <th class="text-center">Jumlah</th>
                                     <th class="text-center">Foto</th>
                                 </tr>
                             </thead>
@@ -39,6 +41,8 @@
                                         </td>
                                         <td class="text-center">{{ $galeri->label }}</td>
                                         <td class="text-center">{{ $galeri->pemesan }}</td>
+                                        <td class="text-center">{{ $galeri->bahan }}</td>
+                                        <td class="text-center">{{ $galeri->jumlah }}</td>
                                         <td class="text-center">
                                             <img src="{{ url("public/$galeri->foto") }}" class="img-responsive"
                                                 style="width:20%">
@@ -71,6 +75,20 @@
                                                             <div class="col-sm-10">
                                                                 <input type="text" class="form-control" name="pemesan"
                                                                     value="{{ $galeri->pemesan }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-2 col-form-label">Bahan</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" name="bahan"
+                                                                    value="{{ $galeri->bahan }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-2 col-form-label">Jumlah</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" name="jumlah"
+                                                                    value="{{ $galeri->jumlah }}">
                                                             </div>
                                                         </div>
 
@@ -128,6 +146,18 @@
                             <label class="col-sm-2 col-form-label">Pemesan</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="pemesan" placeholder="Pemesan" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Bahan</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="bahan" placeholder="Pemesan" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Jumlah</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="jumlah" placeholder="Pemesan" required>
                             </div>
                         </div>
 
