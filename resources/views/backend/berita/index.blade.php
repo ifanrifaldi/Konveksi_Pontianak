@@ -8,7 +8,7 @@
 
                     <a href="{{ url('admin/berita/create') }}" class="btn btn-primary float-right mb-10"> <span
                         class="fa fa-plus"></span> Tambah Data</a>
-                    <h3 class="card-title">Data Berita</h3>
+                    <h3 class="card-title">Data Blog</h3>
                 </div>
 
                 <div class="card-body">

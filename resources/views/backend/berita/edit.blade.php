@@ -11,7 +11,7 @@
                     </div>
                     
                     <div class="card-header">
-                        <h3 class="title text-center">Edit Berita</h3>
+                        <h3 class="title text-center">Edit Blog</h3>
                     </div>
                     <form action="{{ url('admin/berita', $berita->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Isi Berita</label>
+                                <label class="col-sm-2 col-form-label">Isi Blog</label>
                                 <div class="col-sm-10">
                                     <textarea class="form-control summernote" name="isi" style="height: 100%">{{ $berita->isi }}</textarea>
                                 </div>
