@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use App\Models\Berita;
+use App\Models\Komentar;
 
 class BeritaController extends Controller
 {
@@ -69,5 +70,13 @@ class BeritaController extends Controller
         Berita::destroy($berita);
 
         return back()->with('danger', 'Data Berhasil di Hapus');
+    }
+
+    public function showKomentar($berita)
+    {
+        $data['berita'] = Berita::find($berita);
+        $data['list_komentar'] = Komentar::where('id_berita', $berita)->get();
+
+        return view('backend.berita.komentar', $data);
     }
 }

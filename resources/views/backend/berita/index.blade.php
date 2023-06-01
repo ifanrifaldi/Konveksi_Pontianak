@@ -27,6 +27,9 @@
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td class="text-center">
                                         <div class="btn-group">
+                                            <a href="{{ url("admin/berita/$berita->id") }}/komentar" class="btn btn-default"><span
+                                                class="fa fa-comment"></span> Lihat Komentar</a>
+
                                             <a href="{{ url("admin/berita/$berita->id") }}" class="btn btn-info"><span
                                                 class="fa fa-info"></span> </a>
 
