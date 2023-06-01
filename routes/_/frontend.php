@@ -15,7 +15,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('blogdetail', 'blogdetail');
     // blog
     Route::get('berita', 'berita');
-    Route::get('beritadetail/{berita}', 'beritadetail');
+    Route::get('berita-detail/{berita}', 'beritadetail');
     // Produk
     Route::get('produk/{jenis_produk}', 'show');
     // Route::get('produk/{jenis_produk}', 'view');
@@ -26,5 +26,7 @@ Route::controller(HomeController::class)->group(function () {
     // Galery
     Route::get('galery', 'galery');
     // Route::get('bisnis', 'bisnis');
+
+    Route::post('store-komentar', [HomeController::class, 'komen']);
     
 });

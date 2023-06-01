@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::get('produk/delete-galeri/{galeri_produk}', [ProdukController::class, 'deleteGaleri']);
 
     Route::resource('berita', BeritaController::class);
+    Route::get('berita/{berita}/komentar', [BeritaController::class, 'showKomentar']);
 
     Route::resource('profil', ProfilController::class);
 

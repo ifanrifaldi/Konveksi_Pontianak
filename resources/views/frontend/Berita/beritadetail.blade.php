@@ -1,80 +1,102 @@
 @extends('template.base')
 @section('title', 'Berita')
 @section('content')
-@include('layout.menu.menu')
-<div class="page-heading header-text">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>{{$berita->judul}}</h1>
-                <span><i class="fa fa-user"></i> {{$berita->nama_penulis}} &nbsp;|&nbsp; <i class="fa fa-calendar"></i>  {{ $berita->created_at->diffForHumans()  }}</span>
+    @include('layout.menu.menu')
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ $berita->judul }}</h1>
+                    <span><i class="fa fa-user"></i> {{ $berita->nama_penulis }} &nbsp;|&nbsp; <i class="fa fa-calendar"></i>
+                        {{ $berita->created_at->diffForHumans() }}</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="more-info about-info">
-    <div class="container">
-        <div class="more-info-content">
-            <div class="right-content">
-                <div>
-                    <img src="{{ url("public/$berita->gambar") }}" alt="{{$berita->gambar}}" class="img-fluid">
+    <div class="more-info about-info">
+        <div class="container">
+            <div class="more-info-content">
+                <div class="right-content">
+                    <div>
+                        <img src="{{ url("public/$berita->gambar") }}" alt="{{ $berita->gambar }}" class="img-fluid">
+                    </div>
+                    <br>
+                    <h1 style="text-align: justify;">{!! nl2br($berita->isi) !!}</h1>
                 </div>
-                <br>
-                <h1 style="text-align: justify;">{!! nl2br($berita->isi) !!}</h1>
-
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nihil magnam magni perferendis sit, inventore maxime architecto ab officia illum vitae veritatis asperiores laborum quaerat ratione omnis, possimus, sunt quae?</p>
-
-                <h4>Lorem ipsum dolor sit amet.</h4>
-
-                <br>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus amet, corporis corrupti quod illum id autem assumenda nostrum quo, odio libero dolorum. Expedita, enim non voluptatibus qui veritatis iste ad? Voluptates natus dolor, minus culpa magnam! Iusto blanditiis beatae laudantium.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolor nemo optio facere impedit fugiat obcaecati blanditiis tempora inventore sapiente beatae aspernatur vitae fuga totam possimus eveniet, praesentium maiores! Dolorum illum voluptates ipsum aspernatur explicabo numquam, aliquid a amet, deleniti eos suscipit totam laudantium excepturi voluptatum fugiat eum nesciunt minus iste, expedita provident temporibus, alias possimus veritatis aut fugit? Eaque.</p> -->
+                <a href="#" data-toggle="modal" data-target="#exampleModal" class="filled-button"> Masukan Komentar
+                    Anda</a>
             </div>
         </div>
     </div>
-</div>
 
-<div class="callback-form contact-us">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <h2>Leave a <em>comment</em></h2>
-                    <span>Suspendisse a ante in neque iaculis lacinia</span>
+    <div class="callback-form contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Hasil <em>Penilaian</em></h2>
+                        <span>
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact-form">
+                        
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="contact-form">
-                    <form id="contact" action="" method="get">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="margin-top: 70px;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <form action="{{ url('store-komentar') }}" method="POST">
+                    @csrf
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Masukan Komentar Anda</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" value="{{ $berita->id }}" name="id_berita" hidden>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
                                 <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                                <fieldset>
-                                    <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="filled-button">Submit</button>
+                                    <input type="text" class="form-control" name="nama_pengirim" placeholder="Masukan Nama Anda"
+                                        required="">
                                 </fieldset>
                             </div>
                         </div>
-                    </form>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="email" class="form-control" name="email_pengirim" placeholder="Masukan Email Anda"
+                                        required="">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <fieldset>
+                            <textarea type="text" class="form-control" name="text"></textarea>
+                        </fieldset>
+                    </div>
                 </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+                    <button class="btn btn-primary"> Kirim Komentar</button>
+                </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
 @endsection

@@ -28,7 +28,7 @@
                         <!-- <p> {!! nl2br($berita->isi) !!}</p>
                         <br> -->
                         <div>
-                            <a href="{{ url ("beritadetail/$berita->id")}}" class="filled-button">Baca Selengkapnya</a>
+                            <a href="{{ url ("berita-detail/$berita->id")}}" class="filled-button">Baca Selengkapnya</a>
                         </div>
                     </article>
 

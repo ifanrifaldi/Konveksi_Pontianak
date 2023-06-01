@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Berita;
 use App\Models\Galeri;
+use App\Models\GaleriProduk;
 use App\Models\JenisProduk;
 use App\Models\Produk;
 
+use App\Models\Komentar;
 class HomeController extends Controller
 {   
     public function beranda(){
@@ -19,14 +21,7 @@ class HomeController extends Controller
         $data['list_jenis_produk'] = JenisProduk::all();
         return view('frontend.profil.profil', $data);
     }
-    // function visimisi(){
-    //     $data['list_jenis_produk'] = JenisProduk::all();
-    //     return view('frontend.profil.visimisi', $data);
-    // }
-    // function struktur(){
-    //     $data['list_jenis_produk'] = JenisProduk::all();
-    //     return view('frontend.profil.team', $data);
-    // }
+    
 // Blog
     function blog(){
         $data['list_jenis_produk'] = JenisProduk::all();
@@ -57,6 +52,8 @@ class HomeController extends Controller
         $data['list_produk'] = Produk::where('id_jenis_produk', $jenis_produk)->get();
         $data['list_jenis_produk'] = JenisProduk::all();
 
+        $data['list_galeri_produk'] = GaleriProduk::all();
+
         return view('frontend.produk.show', $data);
     }
 
@@ -73,8 +70,18 @@ class HomeController extends Controller
         return view('frontend.galery', $data);
     }
 
-    // function bisnis(){
-    //     return view('frontend.bisnis');
-    // }
+    public function komen()
+    {
+        $komentar = New Komentar();
+        $komentar->id_berita = request('id_berita');
+        $komentar->nama_pengirim = request('nama_pengirim');
+        $komentar->email_pengirim = request('email_pengirim');
+        $komentar->text = request('text');
+        $komentar->send = 1;
+        
+        $komentar->save();
+
+        return back();
+    }
 
 }
