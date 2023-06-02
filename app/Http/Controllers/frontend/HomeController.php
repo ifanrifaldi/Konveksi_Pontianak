@@ -13,6 +13,8 @@ use App\Models\Komentar;
 class HomeController extends Controller
 {   
     public function beranda(){
+        $data['list_berita'] = Berita::orderBy('id','desc')->take(1)->get();
+        $data['list_galeri'] = Galeri::orderBy('id','desc')->take(3)->get();
         $data['list_jenis_produk'] = JenisProduk::all();
         return view('frontend.beranda', $data);
     }

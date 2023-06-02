@@ -46,6 +46,7 @@
                     </div>
 
                     <br>
+                    <br>
                     <div class="modal fade" id="modal-produ{{ $produk->id }}" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 70px;">
                         <div class="modal-dialog modal-lg" role="document">

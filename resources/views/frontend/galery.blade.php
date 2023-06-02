@@ -29,7 +29,7 @@
                   <h6><b>Jumlah :</b> {{ $galeri->jumlah }} Pcs</h6>
                 </div>
                 <!-- <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
-                <a href="{{url ('public/template')}}/assets/images/produk/kemeja2.jpeg"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Lihat</a>
+                <a href="{{ url("public/$galeri->foto") }}"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Lihat</a>
                 
               </div>
               
