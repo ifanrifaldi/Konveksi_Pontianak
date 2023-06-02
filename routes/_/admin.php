@@ -35,6 +35,8 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::resource('prosedur/produksi', ProsedurProduksiController::class);
 
     Route::resource('galeri', GaleriController::class);
+    Route::post('galeri/store-galeri', [GaleriController::class, 'galeri']);
+    Route::get('galeri/delete-galeri/{galerigaleri}', [GaleriController::class,'galeriDelete']);
 
     Route::resource('mitra', MitraController::class);
 });

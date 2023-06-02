@@ -21,6 +21,7 @@
                                     <th class="text-center">Pemesan</th>
                                     <th class="text-center">Bahan</th>
                                     <th class="text-center">Jumlah</th>
+                                    <th class="text-center">Tambah Galeri</th>
                                     <th class="text-center">Foto</th>
                                 </tr>
                             </thead>
@@ -30,7 +31,11 @@
                                         <td class="text-center">{{ $loop->iteration }}</td>
                                         <td class="text-center">
                                             <div class="btn-group">
-                                               
+
+                                                <a class="btn btn-info" data-toggle="modal"
+                                                    data-target="#modal-show{{ $galeri->id }}"><span
+                                                        class="fa fa-info"></span></a>
+
                                                 <a class="btn btn-warning" data-toggle="modal"
                                                     data-target="#modal-edit{{ $galeri->id }}"><span
                                                         class="fa fa-edit"></span></a>
@@ -44,8 +49,28 @@
                                         <td class="text-center">{{ $galeri->bahan }}</td>
                                         <td class="text-center">{{ $galeri->jumlah }}</td>
                                         <td class="text-center">
+                                            <form action="{{ url('admin/galeri/store-galeri') }}" method="POST"
+                                                enctype="multipart/form-data">
+                                                @csrf
+                                                <div class="form-group row">
+                                                    <input type="text" name="id_galeri" value="{{ $galeri->id }}"
+                                                        class="form-control" hidden>
+                                                    <div class="col-md-10">
+                                                        <input type="file" name="foto" accept=".jpg, .png, .jpeg"
+                                                            class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <button class="btn btn-primary float-right"
+                                                            title="Upload Galeri"><span
+                                                                class="fa fa-upload"></span></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+
+                                        <td class="text-center" style="width: 40%">
                                             <img src="{{ url("public/$galeri->foto") }}" class="img-responsive"
-                                                style="width:20%">
+                                                style="width:50%">
                                         </td>
                                     </tr>
                                     <div class="modal fade" id="modal-edit{{ $galeri->id }}">
@@ -61,7 +86,7 @@
                                                 <form action="{{ url('admin/galeri', $galeri->id) }}" method="post"
                                                     enctype="multipart/form-data">
                                                     @csrf
-                                                    @method("PUT")
+                                                    @method('PUT')
                                                     <div class="modal-body">
                                                         <div class="form-group row">
                                                             <label class="col-sm-2 col-form-label">Label</label>
@@ -115,6 +140,39 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="modal fade" id="modal-show{{ $galeri->id }}">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Detail Data Galeri</h4>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col-12 col-sm-12">
+                                                        <div class="col-md-12">
+                                                            <img src="{{ url("public/$galeri->foto") }}" class="product-image">
+                                                        </div>
+                                                        <div class="col-md-12 product-image-thumbs">
+                                                            @foreach ($list_galeri_galeri as $galeri_galeri)
+                                                            @if ($galeri_galeri->id_galeri == $galeri->id)
+                                                            <a href="{{ url("admin/galeri/delete-galeri/$galeri_galeri->id") }}" onclick="return confirm('Yakin Akan Menghapus Data Ini')" class="btn btn-danger btn-xs" style="height: 1%"><span class="fa fa-times"></span></a>
+                                                            <div class="product-image-thumb">
+                                                                <img src="{{ url("public/$galeri_galeri->foto") }}">
+                                                            </div>
+                                                            @endif
+                                                           
+                                                            @endforeach
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 @endforeach
                             </tbody>
                         </table>
@@ -145,18 +203,24 @@
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Pemesan</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="pemesan" placeholder="Pemesan" required>
+                                <input type="text" class="form-control" name="pemesan" placeholder="Pemesan"
+                                    required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Bahan</label>
                             <div class="col-sm-10">
+
+                                <input type="text" class="form-control" name="bahan" placeholder="Pemesan"
+                                    required>
                                 <input type="text" class="form-control" name="bahan" placeholder="Bahan" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Jumlah</label>
                             <div class="col-sm-10">
+                                <input type="text" class="form-control" name="jumlah" placeholder="Pemesan"
+                                    required>
                                 <input type="text" class="form-control" name="jumlah" placeholder="Jumlah" required>
                             </div>
                         </div>
