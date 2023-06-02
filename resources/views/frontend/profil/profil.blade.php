@@ -120,7 +120,20 @@
         </div>
     </div>
 </div>
-<br>
-<br>
+<div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="left-content">
+              <span>Lorem ipsum dolor sit amet</span>
+              <h2>Modi esse sapiente tenetur <em>impedit laudantium laborum</em></h2>
+              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
+              <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
 @endsection

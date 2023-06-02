@@ -151,13 +151,13 @@
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Bahan</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="bahan" placeholder="Pemesan" required>
+                                <input type="text" class="form-control" name="bahan" placeholder="Bahan" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Jumlah</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="jumlah" placeholder="Pemesan" required>
+                                <input type="text" class="form-control" name="jumlah" placeholder="Jumlah" required>
                             </div>
                         </div>
 

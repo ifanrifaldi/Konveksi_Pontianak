@@ -10,7 +10,7 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
+                    <h4>KONVEKSI PONTIANAK<br>SEJAK 2016</h4>
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
@@ -24,7 +24,7 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
+                    <h4>KONVEKSI PONTIANAK<br>SEJAK 2016</h4>
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
@@ -38,7 +38,7 @@
             <div class="img-fill">
                 <div class="text-content">
                     <h6>Selamat Datang Di Website Kami</h6>
-                    <h4>KONVEKSI PONTIANAK<br>BERDIRI SEJAK 2016</h4>
+                    <h4>KONVEKSI PONTIANAK<br>SEJAK 2016</h4>
                     <p>
                         Jasa Pembuatan Seragam Organisasi, Istansi, Dan Perusahaan (Negeri/Swasta).
                     </p>
@@ -66,8 +66,8 @@
                 </span>
             </div>
             <div class="col-md-6">
-            <br>
-            <span style="text-align: justify;">
+                <br>
+                <span style="text-align: justify;">
                     <h6><i class="fa fa-certificate"></i> Bebas Titik Bordir</h6>
                     <h6><i class="fa fa-certificate"></i> Bebas Model</h6>
                     <h6><i class="fa fa-certificate"></i> Bebas Ukuran</h6>
@@ -90,82 +90,52 @@
                     <span>KEMEJA SAFETY, KEMEJA WEARPACK, JAKET (BOMBER/PARKA), KAOS (OBLONG / POLO), (PDH / PDL).</span>
                 </div>
             </div>
+
+            @foreach($list_galeri as $galeri)
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/produk/jaket.jpeg" alt="">
+                    <img src="{{ url("public/$galeri->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
                     <div class="down-content">
-                        <h4>Jaket Bomber</h4>
+                        <h4>{{ $galeri->label }}</h4>
                         <!-- <div style="margin-bottom:10px;">
                             <span>from <sup>$</sup>120 per weekend</span>
                         </div>
                         <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
-                        <a href="offers.html" class="filled-button">Galery</a>
+                        <a href="{{url('galery')}}" class="filled-button">Galery</a>
                     </div>
                 </div>
-
-                <br>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/produk/kaospolo.jpeg" alt="">
-                    <div class="down-content">
-                        <h4>Kaos Polo</h4>
-                        <!-- <div style="margin-bottom:10px;">
-                            <span>from <sup>$</sup>120 per weekend</span>
-                        </div>
-                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
-                        <a href="offers.html" class="filled-button">Galery</a>
-                    </div>
-                </div>
-
-                <br>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item">
-                    <img src="{{url ('public/template') }}/assets/images/produk/kemeja2.jpeg" alt="">
-                    <div class="down-content">
-                        <h4>Kemeja PDL</h4>
-                        <!-- <div style="margin-bottom:10px;">
-                            <span>from <sup>$</sup>120 per weekend</span>
-                        </div>
-                        <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
-                        <a href="offers.html" class="filled-button">Galery</a>
-                    </div>
-                </div>
-
                 <br>
             </div>
 
+            @endforeach
         </div>
     </div>
-</div>
 
-<div class="fun-facts">
-    <div class="container">
-        <div class="more-info-content">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="left-image">
-                        <img src="{{url ('public/template') }}/assets/images/about-1-570x350.jpg" class="img-fluid" alt="">
+    <div class="fun-facts">
+        <div class="container">
+            <div class="more-info-content">
+                <div class="row">
+                    @foreach($list_berita as $berita)
+                    <div class="col-md-12">
+                        <span class="text-center" style="font-size: 125%;">blog Artikel</span>
+                        <h2 class="text-center"><em>{{$berita->judul}}</em></h2>
+                        <div class="left-image">
+                            <img src="{{ url("public/$berita->gambar") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
+                            <br>
+                            <br>
+                            <span class="float-right"><i class="fa fa-calendar"></i>
+                                {{ $berita->created_at->diffForHumans() }}</span>
+                            <br>
+                            <br>
+                            <a href="{{ url ("berita-detail/$berita->id")}}" class="filled-button">Baca Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="right-content">
-                        <span>blog Artikel</span>
-                        <h2>Get to know about <em>our company</em></h2>
-                        <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus</p>
-                        <a href="about.html" class="filled-button">Baca Selengkapnya</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
-</div>
-<!-- 
+    <!-- 
 <div class="more-info">
     <div class="container">
         <div class="section-heading">
@@ -216,7 +186,7 @@
     </div>
 </div> -->
 
-<!-- <div class="testimonials">
+    <!-- <div class="testimonials">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -270,7 +240,7 @@
     </div>
 </div> -->
 
-<!-- <div class="callback-form">
+    <!-- <div class="callback-form">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -320,4 +290,4 @@
         <br>
     </div>
 </div> -->
-@endsection
+    @endsection
