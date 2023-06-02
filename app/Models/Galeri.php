@@ -5,11 +5,18 @@ namespace App\Models;
 namespace App\Models;
 use Illuminate\Support\Str;
 use App\Models\Model;
+use App\Models\GaleriGaleri;
 
 
 class Galeri extends Model
 {
     protected $table="galeri";
+
+    function GaleriGaleri()
+    {
+        return $this->belongsTo(GaleriGaleri::class, 'id_');
+ 
+    }
 
     function handleUploadFoto()
     {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Galeri;
+use App\Models\GaleriGaleri;
 use Illuminate\Http\Request;
 
 class GaleriController extends Controller
@@ -11,6 +12,7 @@ class GaleriController extends Controller
     public function index()
     {
         $data['list_galeri'] = Galeri::all();
+        $data['list_galeri_galeri'] = GaleriGaleri::all();
         return view('backend.galeri.index', $data);
     }
 
@@ -51,5 +53,22 @@ class GaleriController extends Controller
         Galeri::destroy($galeri);
 
         return back()->with('danger', 'Data Berhasil Di hapus');
+    }
+
+    public function galeri()
+    {
+        $galerigaleri = New GaleriGaleri;
+        $galerigaleri->id_galeri = request('id_galeri');
+        $galerigaleri->handleUploadFoto();
+        $galerigaleri->save();
+
+        return back();
+    }
+
+    public function galeriDelete($galerigaleri)
+    {
+        GaleriGaleri::destroy($galerigaleri);
+
+        return back();
     }
 }
