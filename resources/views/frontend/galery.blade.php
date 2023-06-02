@@ -71,6 +71,24 @@
                         <br>
                     </div>
                 @endforeach
+      <div class="container">
+        <div class="row">
+        @foreach ($list_galeri as $galeri)
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{{ url("public/$galeri->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
+              <div class="down-content">
+                <h4>{{ $galeri->label }}</h4>
+                <div style="margin-bottom:10px;">
+                  <h6><b>Pemesan :</b> {{ $galeri->pemesan }}</h6>
+                  <h6><b>Bahan :</b> {{ $galeri->bahan }}</h6>
+                  <h6><b>Jumlah :</b> {{ $galeri->jumlah }} Pcs</h6>
+                </div>
+                <!-- <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p> -->
+                <a href="{{ url("public/$galeri->foto") }}"  data-toggle="show" data-target="#exampleModal"  class="filled-button">Lihat</a>
+                
+              </div>
+            
             </div>
 
             <br>
