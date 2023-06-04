@@ -5,26 +5,26 @@
             <div class="col-12">
                 <div class="card card-info">
                     <div class="card-header">
-                        <h3 class="card-title">Tambah Data Mitra</h3>
+                        <h3 class="card-title">Tambah Data Partner</h3>
                     </div>
                     <form action="{{ url('admin/mitra') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Nama Mitra</label>
+                                <label class="col-sm-2 col-form-label">Nama Partner</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="nama" placeholder="Nama Mitra" required>
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Partner" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Kota Mitra</label>
+                                <label class="col-sm-2 col-form-label">Link Medsos</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="kota_mitra" placeholder="Kota Mitra">
+                                    <input type="text" class="form-control" name="kota_mitra" placeholder="Link Medsos">
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Logo Mitra</label>
+                                <label class="col-sm-2 col-form-label">Logo Partner</label>
                                 <div class="col-sm-10">
                                     <input type="file" class="form-control" name="logo" accept=".jpg, .png, .jpeg">
                                 </div>
