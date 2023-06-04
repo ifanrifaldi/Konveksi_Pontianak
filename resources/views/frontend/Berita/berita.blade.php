@@ -18,9 +18,26 @@
         <div class="row">
             <div class="col-md-8">
                 <section class='tabs-content'>
-                @foreach($list_berita as $berita)
-                <article id='tabs-2'>
+                    @foreach($list_berita as $berita)
+                    <article id='tabs-2'>
                         <img src="{{ url("public/$berita->gambar") }}" alt="{{$berita->gambar}}" class="img-fluid">
+                        
+                        <!-- <br>
+                        <div class="float-right">
+                            <a href="https://twitter.com/share?url=https://dumetschool.com&text=Simple%20Share%20Buttons&hashtags=simplesharebuttons" target="_blank">
+                            <i class="fa fa-whatsapp"></i>
+                            
+                            <a href="https://twitter.com/share?url=https://dumetschool.com&text=Simple%20Share%20Buttons&hashtags=simplesharebuttons" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                            
+                            <a href="https://twitter.com/share?url=https://dumetschool.com&text=Simple%20Share%20Buttons&hashtags=simplesharebuttons" target="_blank">
+                            <i class="fa fa-twitter"></i>
+
+                            <a href="https://twitter.com/share?url=https://dumetschool.com&text=Simple%20Share%20Buttons&hashtags=simplesharebuttons" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            </a>
+                        </div> -->
+
                         <h4><a href="blog-details.html">{{$berita->judul}}</a></h4>
                         <div style="margin-bottom:10px;">
                             <span>{{$berita->nama_penulis}} &nbsp;|&nbsp; {{ $berita->created_at->diffForHumans()  }} &nbsp;|&nbsp; 15 comments</span>
@@ -35,7 +52,7 @@
                     <br>
                     <br>
                     <br>
-                @endforeach
+                    @endforeach
                 </section>
             </div>
 

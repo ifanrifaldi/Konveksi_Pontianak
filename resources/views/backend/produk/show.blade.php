@@ -44,7 +44,7 @@
 
                     <div class="col-12 col-sm-6">
 
-                        <h3 class="my-3">{{ $produk->nama }}</h3>
+                        <!-- <h3 class="my-3">{{ $produk->nama }}</h3>
                         <label for="">
                             Harga Pakaian : {{ $produk->harga }}
                         </label>
@@ -53,10 +53,10 @@
                             Bahan Pakaian : {!! nl2br($produk->bahan_pakaian) !!}
                         </label>
                         <hr>
-                        <h4>Ukuran</h4>
+                        <h4>Ukuran</h4> -->
                         <div>
                             <p>
-                                {!! nl2br($produk->ukuran) !!}
+                                {!! nl2br($produk->deskripsi_produk) !!}
                             </p>
                         </div>
                     </div>

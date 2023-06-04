@@ -22,19 +22,19 @@
               <li><a href="#">Lacinia ac sapien</a></li> -->
             </ul>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="#" target="_blank" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><img src="{{ url('public/template') }}/assets/images/fatner3.png" style="height: 35px;"></a></li>
+              <li><a href="#" target="_blank"><img src="{{ url('public/template') }}/assets/images/fatner2.png" style="height: 35px;"></a></li>
+              <li><a href="#" target="_blank"><img src="{{ url('public/template') }}/assets/images/fatner1.png" style="height: 35px;"></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
             <h4>Fitur</h4>
             <ul class="menu-list">
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Galery</a></li>
-              <li><a href="#">Cara Order</a></li>
+              <li><a href="{{ url ('/') }}">Beranda</a></li>
+              <li><a href="{{ url ('profil') }}">Profil</a></li>
+              <li><a href="{{ url ('berita') }}">Blog</a></li>
+              <li><a href="{{ url ('galery') }}">Galery</a></li>
+              <li><a href="{{ url ('caraorder') }}">Cara Order</a></li>
             </ul>
           </div>
           <!-- <div class="col-md-3 footer-item last-item">
