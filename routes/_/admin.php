@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\BeritaController;
+use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\GaleriController;
 use App\Http\Controllers\Admin\JenisProdukController;
 use App\Http\Controllers\Admin\MitraController;
@@ -25,8 +25,9 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::post('produk/store-galeri-produk', [ProdukController::class, 'storeGaleri']);
     Route::get('produk/delete-galeri/{galeri_produk}', [ProdukController::class, 'deleteGaleri']);
 
-    Route::resource('berita', BeritaController::class);
-    Route::get('berita/{berita}/komentar', [BeritaController::class, 'showKomentar']);
+    Route::resource('blog', BlogController::class);
+    Route::get('blog/{blog}/komentar', [BlogController::class, 'showKomentar']);
+    Route::post('blog/store-balasan', [BlogController::class, 'storeBalasan']);
 
     Route::resource('profil', ProfilController::class);
 

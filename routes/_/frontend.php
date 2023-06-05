@@ -14,8 +14,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('blog', 'blog');
     Route::get('blogdetail', 'blogdetail');
     // blog
-    Route::get('berita', 'berita');
-    Route::get('berita-detail/{berita}', 'beritadetail');
+    Route::get('blog', 'berita');
+    Route::get('blog-detail/{berita}', 'beritadetail');
     // Produk
     Route::get('produk/{jenis_produk}', 'show');
     // Route::get('produk/{jenis_produk}', 'view');
