@@ -7,7 +7,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Tambah Data Blog</h3>
                     </div>
-                    <form action="{{ url('admin/berita') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ url('admin/blog') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
                             <div class="form-group row">

@@ -54,11 +54,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ checkRouteActive('berita') }} {{ checkRouteActive('beritadetail') }}"
-                            href="{{ url('berita') }}">Blog</a>
+                        <a class="nav-link {{ checkRouteActive('blog') }} {{ checkRouteActive('blog-detail') }}"
+                            href="{{ url('blog') }}">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ checkRouteActive('profil') }} {{ checkRouteActive('beritadetail') }}"
+                        <a class="nav-link {{ checkRouteActive('profil') }} {{ checkRouteActive('blog-detail') }}"
                             href="{{ url('profil') }}">Profil</a>
                     </li>
                     <!-- <li class="nav-item dropdown">

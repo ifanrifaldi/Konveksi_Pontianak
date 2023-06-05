@@ -5,12 +5,12 @@ namespace App\Models;
 use App\Models\ModelAuthenticate;
 use Illuminate\Support\Str;
 use App\Models\Blog;
-use App\Models\BalasanKomentar;
+use App\Models\Komentar;
 
 
-class Komentar extends ModelAuthenticate
+class BalasanKomentar extends ModelAuthenticate
 {
-    protected $table ="komentar";
+    protected $table ="balasan_komentar";
 
     function Blog()
     {
@@ -18,9 +18,9 @@ class Komentar extends ModelAuthenticate
  
     }
 
-    function BalasanKomentar()
+    function Komentar()
     {
-        return $this->belongsTo(BalasanKomentar::class, 'id');
+        return $this->belongsTo(Komentar::class, 'id_komentar');
  
     }
 }

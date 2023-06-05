@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('admin/berita') }}" class="nav-link {{checkRouteActive('admin/berita')}}">
+                    <a href="{{ url('admin/blog') }}" class="nav-link {{checkRouteActive('admin/blog')}}">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
                             Data Blog
