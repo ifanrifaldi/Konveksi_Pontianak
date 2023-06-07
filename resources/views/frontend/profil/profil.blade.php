@@ -36,23 +36,23 @@
                     </h7>
                     <br>
                     <br>
-                    <h7> <b>Konveksi Pontianak</b>berdiri pada tahun 10 april 2016 dan baru di legalkan pada tahun 2019 dibawah naungan cv. Bahri khatulistiwa abadi, sampai tahun 2023 dan berganti perusahaan pada awal tahun 2023 dibawah naungan PT. Industri Kreatif Nusantara.
+                    <h7> <b>Konveksi Pontianak </b>berdiri pada tahun 10 april 2016 dan baru di legalkan pada tahun 2019 dibawah naungan cv. Bahri khatulistiwa abadi, sampai tahun 2023 dan berganti perusahaan pada awal tahun 2023 dibawah naungan PT. Industri Kreatif Nusantara.
                     </h7>
                     <br>
                     <br>
-                    <h7> <b>Konveksi Pontianak</b>di kelola oleh profesional muda kreativ dan inovatif, serta mempunyai semangat kerja yang tinggi. Atas kepercayaan dari client yang masih bekerjasama dengan kami, kami sangat menjaga kualitas dan kepercayaan konsumen.
+                    <h7> <b>Konveksi Pontianak </b>di kelola oleh profesional muda kreativ dan inovatif, serta mempunyai semangat kerja yang tinggi. Atas kepercayaan dari client yang masih bekerjasama dengan kami, kami sangat menjaga kualitas dan kepercayaan konsumen.
                     </h7>
                     <br>
                     <br>
-                    <h7> <b>Konveksi Pontianak</b>terus menerus mengembangkan sumber daya yang dimiliki, baik manusianya maupun alat-alat pendukung usaha. Berdasarkan perkembangan bisnis yang kami miliki, kami telah mampu memenuhi kepuasan pelanggan dengan mencapai nilai optimal dan mampu memberikan service dan harga jual yang kompetetif.
+                    <h7> <b>Konveksi Pontianak </b>terus menerus mengembangkan sumber daya yang dimiliki, baik manusianya maupun alat-alat pendukung usaha. Berdasarkan perkembangan bisnis yang kami miliki, kami telah mampu memenuhi kepuasan pelanggan dengan mencapai nilai optimal dan mampu memberikan service dan harga jual yang kompetetif.
                     </h7>
                     <br>
                     <br>
-                    <h7> <b>Konveksi Pontianak</b>bersifat transparan, efektif, dan efisien.
+                    <h7> <b>Konveksi Pontianak </b>bersifat transparan, efektif, dan efisien.
                     </h7>
                     <br>
                     <br>
-                    <h7> <b>Konveksi Pontianak</b>bertujuan berkarya dan Berinovasi dalam semua aktifitasnya agar bisa bersaing di dalam pasar lokal, nasional maupun internasional.
+                    <h7> <b>Konveksi Pontianak </b>bertujuan berkarya dan Berinovasi dalam semua aktifitasnya agar bisa bersaing di dalam pasar lokal, nasional maupun internasional.
                         Meliputi:
 
                     </h7>

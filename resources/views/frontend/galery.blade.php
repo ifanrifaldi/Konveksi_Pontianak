@@ -20,8 +20,7 @@
             @foreach ($list_galeri as $galeri)
             <div class="col-md-4">
                 <div class="service-item">
-                    <img src="{{ url("public/$galeri->foto") }}"
-                        style="object-fit: cover; position: static; width: 100%; height: 400px;">
+                    <img src="{{ url("public/$galeri->foto") }}" style="object-fit: cover; position: static; width: 100%; height: 400px;">
                     <div class="down-content">
                         <h4>{{ $galeri->label }}</h4>
                         <div style="margin-bottom:10px;">
@@ -30,13 +29,11 @@
                             <h6><b>Jumlah :</b> {{ $galeri->jumlah }} Pcs</h6>
                         </div>
 
-                        <a href="#" data-toggle="modal" data-target="#modal-produ{{ $galeri->id }}"
-                            class="filled-button">
+                        <a href="#" data-toggle="modal" data-target="#modal-produ{{ $galeri->id }}" class="filled-button">
                             Detail
                         </a>
 
-                        <div class="modal fade" id="modal-produ{{ $galeri->id }}" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 70px;">
+                        <div class="modal fade" id="modal-produ{{ $galeri->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 70px;">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -52,8 +49,7 @@
                                             @if ($galeri_galeri->id_galeri == $galeri->id)
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <img src="{{ url("public/$galeri_galeri->foto") }}"
-                                                        style="object-fit: cover; position: static; width: 90%; height: 200px;">
+                                                    <img src="{{ url("public/$galeri_galeri->foto") }}" style="object-fit: cover; position: static; width: 90%; height: 200px;">
                                                 </div>
                                             </div>
                                             @endif
@@ -69,12 +65,33 @@
                 </div>
 
                 <br>
+                <br>
             </div>
             @endforeach
         </div>
     </div>
 </div>
+<nav>
+    <ul class="pagination pagination-lg justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">»</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<br>
+<br>
 
 
-
-            @endsection
+@endsection
